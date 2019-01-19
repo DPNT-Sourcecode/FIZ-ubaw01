@@ -11,5 +11,31 @@ namespace BeFaster.App.Tests.Solutions.SUM
         {
             return SumSolution.Sum(x, y);
         }
+
+        [TestCase(-1, 1, ExpectedResult = 0)]
+        public int ComputeSum_RangeTest1(int x, int y)
+        {
+            return SumSolution.Sum(x, y);
+        }
+
+        [TestCase(400, 1, ExpectedResult = 0)]
+        public int ComputeSum_RangeTest2(int x, int y)
+        {
+            return SumSolution.Sum(x, y);
+        }
+
+
+        [TestCase(1, -1, ExpectedResult = 0)]
+        public int ComputeSum_RangeTest3(int x, int y)
+        {
+            return SumSolution.Sum(x, y);
+        }
+
+        [TestCase(1, 400, ExpectedResult = 0)]
+        public int ComputeSum_RangeTest4(int x, int y)
+        {
+            return SumSolution.Sum(x, y);
+        }
     }
 }
+
