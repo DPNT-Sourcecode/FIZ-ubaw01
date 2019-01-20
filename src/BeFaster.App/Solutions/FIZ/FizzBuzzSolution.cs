@@ -6,22 +6,18 @@ namespace BeFaster.App.Solutions.FIZ
     {
         public static string FizzBuzz(int number)
         {
-            string returnValue = "";
-            for(int i=1;i<=number;i++)
-            {
-                string result = "";
-                if (i % 3 == 0 ) result = "fizz";
+            string result = "";
+            if (number % 3 == 0) result = "fizz";
 
-                if (i % 5 == 0) result = result + " buzz";
+            if (number % 5 == 0) result = result + " buzz";
 
-                if (result.Length ==0) result = i.ToString();
+            if (result.Length == 0) result = number.ToString();
 
-                returnValue += result;
-            }
-            return returnValue;
+            return result;
         }
     }
 }
+
 
 
 
