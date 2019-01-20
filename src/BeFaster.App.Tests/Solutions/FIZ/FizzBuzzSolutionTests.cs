@@ -17,5 +17,12 @@ namespace BeFaster.App.Tests.Solutions.FIZ
         {
             return FizzBuzzSolution.FizzBuzz(number);
         }
+
+        [TestCase(1, ExpectedResult = "1")]
+        public string FizzBuzzTest2(int number)
+        {
+            return FizzBuzzSolution.FizzBuzz(number);
+        }
     }
 }
+
