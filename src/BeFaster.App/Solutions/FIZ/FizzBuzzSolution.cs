@@ -15,6 +15,7 @@ namespace BeFaster.App.Solutions.FIZ
                 {
                     result += " ";
                 }
+                
                 result = result + "buzz";
             }
 
@@ -27,7 +28,14 @@ namespace BeFaster.App.Solutions.FIZ
                 {
                     result += " ";
                 }
-                result = result + "deluxe";
+                if (number % 2 == 1)
+                {
+                    result = result + "fake deluxe";
+                }
+                else
+                {
+                    result = result + "deluxe";
+                }
             }
 
             if (result.Length == 0) result = number.ToString();
@@ -36,4 +44,5 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
+
 
