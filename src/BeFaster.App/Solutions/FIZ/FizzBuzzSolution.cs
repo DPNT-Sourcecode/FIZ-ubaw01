@@ -1,5 +1,5 @@
 ﻿using BeFaster.Runner.Exceptions;
-
+using System.Linq;
 namespace BeFaster.App.Solutions.FIZ
 {
     public static class FizzBuzzSolution
@@ -17,11 +17,22 @@ namespace BeFaster.App.Solutions.FIZ
                 }
                 result = result + "buzz";
             }
-            
+
+            string numberinString = number.ToString();
+            int count = numberinString.Count(x => x == numberinString.ToCharArray()[0]);
+
+            if (count == numberinString.Length)
+            {
+                if (result.Length > 0)
+                {
+                    result += " ";
+                }
+                result = result + "deluxe";
+            }
+
             if (result.Length == 0) result = number.ToString();
 
             return result;
         }
     }
 }
-
