@@ -7,7 +7,7 @@ namespace BeFaster.App.Solutions.FIZ
         public static string FizzBuzz(int number)
         {
             string returnValue = "";
-            for(int i=0;i<number;i++)
+            for(int i=1;i<=number;i++)
             {
                 string result = "";
                 if (i % 3 == 0 ) result = "fizz";
@@ -22,4 +22,5 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
+
 
