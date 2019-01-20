@@ -21,7 +21,7 @@ namespace BeFaster.App.Solutions.FIZ
             string numberinString = number.ToString();
             int count = numberinString.Count(x => x == numberinString.ToCharArray()[0]);
 
-            if (count == numberinString.Length)
+            if (count == numberinString.Length && number > 10)
             {
                 if (result.Length > 0)
                 {
@@ -36,3 +36,4 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
+
