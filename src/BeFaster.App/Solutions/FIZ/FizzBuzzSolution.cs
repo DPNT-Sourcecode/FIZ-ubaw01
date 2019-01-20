@@ -12,7 +12,7 @@ namespace BeFaster.App.Solutions.FIZ
                 string result = "";
                 if (i % 3 == 0 ) result = "fizz";
 
-                if (i % 5 == 0) result = result + "buzz";
+                if (i % 5 == 0) result = result + " buzz";
 
                 if (result.Length ==0) result = i.ToString();
 
@@ -22,5 +22,6 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
+
 
 
