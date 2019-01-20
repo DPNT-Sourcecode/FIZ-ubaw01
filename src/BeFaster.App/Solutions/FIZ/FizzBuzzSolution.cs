@@ -22,7 +22,7 @@ namespace BeFaster.App.Solutions.FIZ
            // string numberinString = number.ToString();
            // int count = numberinString.Count(x => x == numberinString.ToCharArray()[0]);
 
-            if (result.Contains("buzz") || result.Contains("fizz"))
+            if ((number % 3 == 0 && number.ToString().Contains("3")) || (number % 5 == 0 && number.ToString().Contains("5")))
             {
                 if (result.Length > 0)
                 {
@@ -44,5 +44,6 @@ namespace BeFaster.App.Solutions.FIZ
         }
     }
 }
+
 
 
